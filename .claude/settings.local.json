@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(New-Item -ItemType Directory -Force -Path \"src\\\\lib\",\"src\\\\hooks\",\"src\\\\components\",\"public\\\\assets\")",
+      "Bash(Out-Null)",
+      "Bash(Copy-Item \"assets\\\\*\" \"public\\\\assets\\\\\" && Write-Host \"Directories created\")"
+    ]
+  }
+}
